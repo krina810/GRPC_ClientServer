@@ -11,3 +11,9 @@ $ cd GRPC_ClientServer/grpc-java/simple-grpc-server $ mvn install exec:java -Dex
 Run GRPC JAVA Client:
 
 $ cd GRPC_ClientServer/grpc-java/simple-grpc-client $ mvn install exec:java -Dexec.mainClass=demo.helloworld.grpc.client.MyGrpcClient
+
+
+Run with docker-compose:
+
+$ sudo docker-compose build
+$ sudo docker-compose up
