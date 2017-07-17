@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+ grpc-server:
+  build: ./simple-grpc-server
+  ports:
+   - "10010:10010"
+
+ grpc-client:
+  build: ./simple-grpc-client
+  ports:
+   - "1001:10010"
+  depends_on: 
+   - grpc-server
