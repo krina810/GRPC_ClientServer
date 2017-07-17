@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+ python-client:
+  build: ./helloworld
+  volumes:
+   - ./helloworld:/usr/src/app
+  ports:
+   - 10010:10010
+
+ 
