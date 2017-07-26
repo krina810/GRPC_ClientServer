@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+ python-server:
+  command: python greeter_server.py
+  build: .
+  
+ python-client:
+  command: python greeter_client.py
+  build: .
+  depends_on:
+   - python-server         
+  
+ 
